@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Facades\Bus;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,3 +17,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/batch/status/{batchId}', 'App\Http\Controllers\ExampleBatchController@status');
+
+Route::get('/batch', 'App\Http\Controllers\ExampleBatchController@list');
