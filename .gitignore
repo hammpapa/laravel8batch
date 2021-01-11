@@ -40,3 +40,4 @@ _ide_*
 *.code-workspace
 
 # End of https://www.toptal.com/developers/gitignore/api/laravel,vscode
+laradock-l8
